@@ -1,0 +1,16 @@
+# Agent orchestration + LLM
+langgraph>=1.2,<2
+langchain-groq>=1.1,<2
+pydantic>=2.9,<3
+
+# App
+streamlit>=1.50
+pandas>=2.2
+python-dotenv>=1.0
+
+# Optional integrations
+sendgrid>=6.12      # live email sending
+flask>=3.0          # webhook_server.py (live engagement tracking)
+
+# Dev
+pytest>=8.3

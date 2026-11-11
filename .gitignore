@@ -1,0 +1,26 @@
+# Secrets
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Run artefacts
+output/
+logs/
+tracking_events.json
+storage/
+
+# Pre-modernisation copy of the project (contains other people's email addresses)
+_archive_original/
+
+# Editor / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db

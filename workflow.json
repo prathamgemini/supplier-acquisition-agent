@@ -1,0 +1,51 @@
+{
+  "workflow_name": "SupplierAcquisitionCampaign",
+  "version": "2.0.0",
+  "description": "Agentic pipeline that finds, qualifies and engages SME suppliers for a B2B marketplace. Every value in this file is demo configuration - edit it to change the campaign without touching code.",
+  "seller": {
+    "company": "TradeSetu",
+    "description": "an online B2B marketplace that connects Indian manufacturers, wholesalers and exporters with verified business buyers",
+    "offer": "a verified seller storefront with your product catalogue, plus buyer enquiries matched to your category and city",
+    "cta": "a 15-minute call this week to walk through the buyer enquiries currently open in your category",
+    "sender_name": "Aarav Mehta",
+    "sender_role": "Seller Growth Associate"
+  },
+  "icp": {
+    "description": "GST-registered Indian SME manufacturers, wholesalers and exporters with a sellable catalogue and limited online reach",
+    "target_categories": [
+      "industrial machinery",
+      "packaging",
+      "textiles and garments",
+      "food processing",
+      "electricals",
+      "agricultural equipment",
+      "chemicals",
+      "handicrafts"
+    ],
+    "employee_count": { "min": 10, "max": 500 },
+    "annual_turnover_lakh": { "min": 50, "max": 10000 }
+  },
+  "scoring": {
+    "weights": {
+      "category_fit": 0.25,
+      "size_fit": 0.2,
+      "digital_gap": 0.2,
+      "growth_signals": 0.2,
+      "reachability": 0.15
+    },
+    "llm_weight": 0.4,
+    "qualified_min": 65,
+    "nurture_min": 45
+  },
+  "outreach": {
+    "tone": "warm, respectful, plain business English an Indian SME owner would write",
+    "max_words": 130,
+    "quality_threshold": 8,
+    "max_revisions": 2,
+    "max_emails_per_run": 10,
+    "recontact_after_days": 30
+  },
+  "lead_source": {
+    "path": "data/sample_leads.json"
+  }
+}
